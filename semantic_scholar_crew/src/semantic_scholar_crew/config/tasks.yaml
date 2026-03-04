@@ -1,0 +1,178 @@
+research_task:
+  description: >
+    Given a research interest `{interest}`, a markdown file of Semantic Scholar guidelines `{guidelines}`,
+    and the integer `{num_papers}` (target number of papers),
+    run using CodeInterpreterTool to retrieve and save papers as a single well-formed JSON file.
+
+    Steps:
+      1. Read `{guidelines}` and configure the Semantic Scholar client to respect rate limits, endpoints, and rules.
+      2. Build queries for `{interest}`.
+      3. Fetch candidates via Semantic Scholar library/API until at least `{num_papers}` open-access papers are found.
+      4. Filter and deduplicate results by DOI + title, keeping only recent, validated open-access papers.
+      5. Apply peer-review filter:
+         - Exclude preprints (arXiv, bioRxiv, medRxiv, SSRN).
+         - Prefer papers from peer-reviewed journals and conferences (IEEE, ACM, Springer, Elsevier, Wiley, Nature, etc.).
+         - Mark each paper with `"peer_reviewed": true/false`.
+      6. Validate each `openaccess_url` with an HTTP HEAD/GET request.
+      7. Clean abstracts:
+         - Ensure each abstract is at least 50 characters long.
+         - If an abstract is missing, too short, or placeholder text (e.g., "Manuscript Info Abstract"), set it to JSON null.
+      8. Assemble a final JSON object with metadata and a list of papers.
+      9. Save automatically to a `.json` file and generate a short run report (either in metadata.log or as inline markdown).
+
+    Constraints:
+      - Must obey Semantic Scholar ToS and guidelines.
+      - Must not leak API keys; load them securely from environment variables.
+      - If insufficient peer-reviewed papers are found, relax the peer-review filter minimally and log why.
+      - Always output valid JSON conforming to the schema below.
+      - Never fabricate or hallucinate metadata (titles, abstracts, authors, venues, links).
+      - Always serialize results directly from the Semantic Scholar API/library.
+      - JSON must be syntactically valid: no duplicate keys, no trailing commas.
+      - Abstract must be `null` (not string "null") when missing.
+
+    STARTING POINT:
+      Use this Python starter code to access Semantic Scholar:
+
+      ```python
+      !pip install semanticscholar
+      from semanticscholar import SemanticScholar
+      from itertools import islice
+      import json
+
+      sch = SemanticScholar()
+
+      num_papers = {num_papers}
+      interest = "{interest}"
+
+      results = sch.search_paper(
+          interest,
+          open_access_pdf=True,
+          limit=num_papers * 2  # overfetch to allow filtering
+      )
+
+      def is_peer_reviewed(venue):
+          blacklist = ["arxiv", "biorxiv", "medrxiv", "ssrn"]
+          return not any(b in (venue or "").lower() for b in blacklist)
+
+      papers = []
+      for paper in islice(results, num_papers * 2):
+          peer_reviewed = is_peer_reviewed(paper.venue)
+          papers.append({
+              "title": paper.title,
+              "year": paper.year,
+              "authors": [a.name for a in paper.authors],
+              "venue": paper.venue,
+              "abstract": paper.abstract if paper.abstract and len(paper.abstract) >= 50 else None,
+              "openaccess_url": paper.openAccessPdf,
+              "openaccess_validated": bool(paper.openAccessPdf),
+              "peer_reviewed": peer_reviewed,
+              "why_selected": "recent, OA PDF, keyword match" if peer_reviewed else "fallback (not peer-reviewed)"
+          })
+
+      papers = [p for p in papers if p["peer_reviewed"]][:num_papers]
+
+      output = {
+          "metadata": {
+              "run_id": "<uuid>",
+              "run_date": "<ISO8601>",
+              "interest": interest,
+              "query_terms": ["..."],
+              "num_requested": num_papers,
+              "num_selected": len(papers),
+              "deduplication_strategy": "doi+title",
+              "source": "SemanticScholar",
+              "log": []
+          },
+          "papers": papers
+      }
+
+      with open("output_path", "w") as f:
+          json.dump(output, f, indent=2)
+
+      print("RUN_COMPLETE output_path")
+      ```
+
+  expected_output: >
+    {
+      "metadata": {
+        "run_id": "<uuid>",
+        "run_date": "<ISO8601>",
+        "interest": "{interest}",
+        "query_terms": ["..."],
+        "num_requested": {num_papers},
+        "num_selected": <int>,
+        "deduplication_strategy": "doi+title",
+        "source": "SemanticScholar",
+        "log": ["excluded 3 preprints", "1 abstract was null"]
+      },
+      "papers": [
+        {
+          "title": "Paper Title",
+          "year": 2024,
+          "authors": ["First Last", "Second Author"],
+          "venue": "Peer-reviewed journal or conference",
+          "abstract": "Full abstract text (cleaned)" or null,
+          "openaccess_url": "https://....pdf",
+          "openaccess_validated": true,
+          "peer_reviewed": true,
+          "why_selected": "Published in peer-reviewed journal, very recent, OA PDF available"
+        }
+      ]
+    }
+    At last give me a json file as output
+  agent: semantic_scholar_agent
+
+
+# Step 2: Extract abstracts (optional if research_task already provides them)
+abstract_task:
+  description: >
+    Extract abstracts from the JSON and save as `abstracts.json`.
+  agent: semantic_scholar_agent
+  expected_output: "outputs/abstracts.json"
+
+# Step 3: Introduction & Scope
+intro_scope_task:
+  description: >
+    Using `abstracts.json`, write Introduction & Scope section in Markdown.
+    Include background, motivation, historical context, and survey scope.
+  agent: intro_scope_agent
+  expected_output: "outputs/intro_scope.md"
+
+# Step 4: Datasets
+dataset_task:
+  description: >
+    Using `abstracts.json`, summarize all datasets and generate Markdown table.
+    Include dataset limitations and usage context.
+  agent: dataset_agent
+  expected_output: "outputs/datasets.md"
+
+# Step 5: Methods & Results
+methods_results_task:
+  description: >
+    Using `abstracts.json`, summarize methods and results.
+    Include taxonomies, comparative tables, and key findings in Markdown.
+  agent: methods_results_agent
+  expected_output: "outputs/methods_results.md"
+
+# Step 6: Challenges, Gaps, and Future Directions
+challenges_gaps_future_task:
+  description: >
+    Using `abstracts.json`, summarize challenges, research gaps, and future directions.
+    Create structured Markdown with clear subsections.
+  agent: challenges_gaps_future_agent
+  expected_output: "outputs/challenges_gaps_future.md"
+
+# Step 7: Conclusion & References
+conclusion_references_task:
+  description: >
+    Using `abstracts.json`, write conclusion and format references in Markdown.
+  agent: conclusion_references_agent
+  expected_output: "outputs/conclusion_references.md"
+
+# Step 8: Merge all sections
+merge_task:
+  description: >
+    Merge all Markdown files (intro, datasets, methods, challenges, conclusion)
+    into a single coherent survey Markdown `final_survey.md`.
+  agent: merger_agent
+  expected_output: "outputs/final_survey.md"

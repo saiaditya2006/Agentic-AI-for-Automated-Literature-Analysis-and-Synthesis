@@ -1,0 +1,448 @@
+{
+  "metadata": {
+    "run_id": "run_id_placeholder",
+    "run_date": "2023-10-20T12:00:00Z",
+    "interest": "EEG-Based Schizophrenia Detection using Machine Learning",
+    "query_terms": [
+      "EEG",
+      "Schizophrenia",
+      "Detection",
+      "Machine Learning"
+    ],
+    "num_requested": 20,
+    "num_selected": 20,
+    "deduplication_strategy": "doi+title",
+    "source": "SemanticScholar",
+    "log": []
+  },
+  "papers": [
+    {
+      "title": "CGP17Pat: Automated Schizophrenia Detection Based on a Cyclic Group of Prime Order Patterns Using EEG Signals",
+      "year": 2022,
+      "authors": [
+        "Emrah Aydemir",
+        "S. Dogan",
+        "M. Baygin",
+        "C. Ooi",
+        "P. Barua",
+        "T. Tuncer",
+        "Usha R. Acharya"
+      ],
+      "venue": "Healthcare",
+      "abstract": "Background and Purpose: Machine learning models have been used to diagnose schizophrenia. The main purpose of this research is to introduce an effective schizophrenia hand-modeled classification method. Method: A public electroencephalogram (EEG) signal data set was used in this work, and an automated schizophrenia detection model is presented using a cyclic group of prime order with a modulo 17 operator. Therefore, the presented feature extractor was named as the cyclic group of prime order pattern, CGP17Pat. Using the proposed CGP17Pat, a new multilevel feature extraction model is presented. To choose a highly distinctive feature, iterative neighborhood component analysis (INCA) was used, and these features were classified using k-nearest neighbors (kNN) with the 10-fold cross-validation and leave-one-subject-out (LOSO) validation techniques. Finally, iterative hard majority voting was employed in the last phase to obtain channel-wise results, and the general results were calculated. Results: The presented CGP17Pat-based EEG classification model attained 99.91% accuracy employing 10-fold cross-validation and 84.33% accuracy using the LOSO strategy. Conclusions: The findings and results depicted the high classification ability of the presented cryptologic pattern for the data set used.",
+      "openaccess_url": {
+        "url": "https://www.mdpi.com/2227-9032/10/4/643/pdf?version=1648548723",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9027158, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "openaccess_validated": false,
+      "peer_reviewed": true,
+      "why_selected": "recent, OA PDF, keyword match"
+    },
+    {
+      "title": "Schizophrenia Detection on EEG Signals Using an Ensemble of a Lightweight Convolutional Neural Network",
+      "year": 2024,
+      "authors": [
+        "Muhammad Hussain",
+        "Noudha Abdulrahman Alsalooli",
+        "Norah Almaghrabi",
+        "Emad-ul-Haq Qazi"
+      ],
+      "venue": "Applied Sciences",
+      "abstract": "Schizophrenia is a chronic mental disorder that affects millions of people around the world. Neurologists commonly use EEG signals to distinguish schizophrenia patients from normal controls, but their manual analysis is tedious and time-consuming. This has motivated the need for automated methods based on machine learning. However, the methods based on hand-engineered features need human experts to decide which features should be extracted. Though deep learning has recently shown good results for schizophrenia detection, the existing deep models have high parameter complexity, making them prone to overfitting because the available data are limited. To overcome these limitations, we propose a method based on an ensemble-like approach and a lightweight one-dimensional convolutional neural network to discriminate schizophrenia patients from healthy controls. It splits an input EEG signal for analysis into smaller segments, where the same backbone model analyses each segment. In this way, it makes decisions after scanning an EEG signal of any length without increasing the complexity; i.e., it scales well with an EEG signal of any length. The model architecture is simple and involves a small number of parameters, making it easy to implement and train using a limited amount of data. Though the model is lightweight, enough trials are still needed to learn the discriminative features from available data. To tackle this issue, we introduce a simple data augmentation scheme. The proposed method achieved an accuracy of 99.88% on a public benchmark dataset; it outperformed the state-of-the-art methods. It will help neurologists in the rapid and accurate detection of schizophrenia patients.",
+      "openaccess_url": {
+        "url": "https://www.mdpi.com/2076-3417/14/12/5048/pdf?version=1718013938",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3390/app14125048?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3390/app14125048, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "openaccess_validated": false,
+      "peer_reviewed": true,
+      "why_selected": "recent, OA PDF, keyword match"
+    },
+    {
+      "title": "An Interpretable Machine Learning Method for the Detection of Schizophrenia Using EEG Signals",
+      "year": 2021,
+      "authors": [
+        "M. A. V\u00e1zquez",
+        "Arash Maghsoudi",
+        "I. P. Mari\u00f1o"
+      ],
+      "venue": "Frontiers in Systems Neuroscience",
+      "abstract": "In this work we propose a machine learning (ML) method to aid in the diagnosis of schizophrenia using electroencephalograms (EEGs) as input data. The computational algorithm not only yields a proposal of diagnostic but, even more importantly, it provides additional information that admits clinical interpretation. It is based on an ML model called random forest that operates on connectivity metrics extracted from the EEG signals. Specifically, we use measures of generalized partial directed coherence (GPDC) and direct directed transfer function (dDTF) to construct the input features to the ML model. The latter allows the identification of the most performance-wise relevant features which, in turn, provide some insights about EEG signals and frequency bands that are associated with schizophrenia. Our preliminary results on real data show that signals associated with the occipital region seem to play a significant role in the diagnosis of the disease. Moreover, although every frequency band might yield useful information for the diagnosis, the beta and theta (frequency) bands provide features that are ultimately more relevant for the ML classifier that we have implemented.",
+      "openaccess_url": {
+        "url": "https://www.frontiersin.org/articles/10.3389/fnsys.2021.652662/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC8194273, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "openaccess_validated": false,
+      "peer_reviewed": true,
+      "why_selected": "recent, OA PDF, keyword match"
+    },
+    {
+      "title": "Quantum Machine-Based Decision Support System for the Detection of Schizophrenia from EEG Records",
+      "year": 2024,
+      "authors": [
+        "Gamzepelin Aksoy",
+        "G. Cattan",
+        "Subrata Chakraborty",
+        "Murat Karabatak"
+      ],
+      "venue": "J. Medical Syst.",
+      "abstract": "Schizophrenia is a serious chronic mental disorder that significantly affects daily life. Electroencephalography (EEG), a method used to measure mental activities in the brain, is among the techniques employed in the diagnosis of schizophrenia. The symptoms of the disease typically begin in childhood and become more pronounced as one grows older. However, it can be managed with specific treatments. Computer-aided methods can be used to achieve an early diagnosis of this illness. In this study, various machine learning algorithms and the emerging technology of quantum-based machine learning algorithm were used to detect schizophrenia using EEG signals. The principal component analysis (PCA) method was applied to process the obtained data in quantum systems. The data, which were reduced in dimensionality, were transformed into qubit form using various feature maps and provided as input to the Quantum Support Vector Machine (QSVM) algorithm. Thus, the QSVM algorithm was applied using different qubit numbers and different circuits in addition to classical machine learning algorithms. All analyses were conducted in the simulator environment of the IBM Quantum Platform. In the classification of this EEG dataset, it is evident that the QSVM algorithm demonstrated superior performance with a 100% success rate when using Pauli X and Pauli Z feature maps. This study serves as proof that quantum machine learning algorithms can be effectively utilized in the field of healthcare.",
+      "openaccess_url": {
+        "url": "https://link.springer.com/content/pdf/10.1007/s10916-024-02048-0.pdf",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10914922, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "openaccess_validated": false,
+      "peer_reviewed": true,
+      "why_selected": "recent, OA PDF, keyword match"
+    },
+    {
+      "title": "BrainScan AI: Early Detection of Schizophrenia through EEG Signals",
+      "year": 2024,
+      "authors": [
+        "Amisha Nagpure",
+        "Apurva Gawali",
+        "Harshada Tale",
+        "Juhi Borkar",
+        "Prof. Mrs. Manisha Raut"
+      ],
+      "venue": "INTERANTIONAL JOURNAL OF SCIENTIFIC RESEARCH IN ENGINEERING AND MANAGEMENT",
+      "abstract": "Schizophrenia is a persistent and debilitating mind disorder characterised via signs and symptoms such as delusions, hallucinations, disorganized questioning, and lack of motivation.The traditional method to diagnosing schizophrenia is based on scientific tests and EEG assessments, which might be time Consuming and difficult, even for skilled clinicians. With the upward thrust of deep studying strategies, there's developing potential for automating and improving the accuracy of schizophrenia detection. in this examine, we explore using diverse deep learning and machine Learning fashions, along with artificial Neural Networks (ANN), to categorise EEG indicators for schizophrenia detection. We propose a custom method for processing EEG records and evaluate the performance of different models. many of the models examined, the ANN completed the highest accuracy of 84%, demonstrating the feasibility of deep mastering techniques for early and correct detection of schizophrenia. This approach ought to provide a dependable and efficient opportunity to conventional diagnostic strategies, lowering the complexity and subjectivity concerned in the modern- day tactics Keywords: Schizophrenia detection, EEG signals ,EEG learning,Artificial Neural Networks (ANN), Machine earning.",
+      "openaccess_url": {
+        "url": "https://ijsrem.com/download/brainscan-ai-early-detection-of-schizophrenia-through-eeg-signals/?wpdmdl=39749&refresh=672faaaff05d31731177135",
+        "status": "BRONZE",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.55041/ijsrem38456?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.55041/ijsrem38456, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "openaccess_validated": false,
+      "peer_reviewed": true,
+      "why_selected": "recent, OA PDF, keyword match"
+    },
+    {
+      "title": "Evaluating Domain Knowledge and Time Series Features for Automated Detection of Schizophrenia from EEG Signals",
+      "year": 2021,
+      "authors": [
+        "Saqib Hussain",
+        "N. Pirzada",
+        "E. Saba",
+        "M. A. Panhwar",
+        "Tanveer Ahmed"
+      ],
+      "venue": "International Journal of Advanced Computer Science and Applications",
+      "abstract": "Over the recent years, Schizophrenia has become a serious mental disorder that is affecting almost 21 million people globally. There are different symptoms to recognize schizophrenia from healthy people. It can affect the thinking pattern of the brain. Delusions, hallucinations, and disorganized speech are the common symptoms of Schizophrenia. In this study, we have used electroencephalography (EEG) signals to analyze and diagnose Schizophrenia using machine learning algorithms and found that temporal features performed well as compared to statistical features. EEG signals are the best way to analyze this disorder as they are intimately linked with human thinking patterns and provide information about brain activities. The present work proposes a Machine Learning (ML) model based on Logistic Regression (LR) along with two feature extraction libraries Time Series Feature Extraction Library (TSFEL) and MNE Python toolkit to diagnose Schizophrenia from EEG signals. The results are analyzed based on 5 different sampling techniques. The dataset was cross-validated using leave one subject out cross-validation (LOSOCV) using Scikit learn and achieve greater accuracy, sensitivity, specificity, macro average recall, and macro f1 score on temporal features respectively. Keywords\u2014Artificial intelligence (AI); Logistic Regression (LR); smote-class weight (S-CW); borderline smote-class weight (BS-CW); electroencephalography; Time Series Feature Extraction Library (TSFEL)",
+      "openaccess_url": {
+        "url": "http://thesai.org/Downloads/Volume12No11/Paper_60-Evaluating_Domain_Knowledge_and_Time_Series_Features.pdf",
+        "status": "GOLD",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.14569/ijacsa.2021.0121160?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.14569/ijacsa.2021.0121160, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "openaccess_validated": false,
+      "peer_reviewed": true,
+      "why_selected": "recent, OA PDF, keyword match"
+    },
+    {
+      "title": "Mental Disorder Diagnosis from EEG Signals Employing Automated Leaning Procedures Based on Radial Basis Functions",
+      "year": 2022,
+      "authors": [
+        "M. Luj\u00e1n",
+        "Jorge Mateo Sotos",
+        "A. Torres",
+        "J. Santos",
+        "O. Quevedo",
+        "Alejandro L. Borja"
+      ],
+      "venue": "Journal of Medical and Biological Engineering",
+      "abstract": "In this paper, a new automated procedure based on deep learning methods for schizophrenia diagnosis is presented. To this aim, electroencephalogram signals obtained using a 32-channel helmet are prominently used to analyze high temporal resolution information from the brain. By these means, the data collected is employed to evaluate the class likelihoods using a neuronal network based on radial basis functions and a fuzzy means algorithm. The results obtained with real datasets validate the high accuracy of the proposed classification method. Thus, effectively characterizing the changes in EEG signals acquired from schizophrenia patients and healthy volunteers. More specifically, values of accuracy better than 93% has been obtained in the present research. Additionally, a comparative study with other approaches based on well-knows machine learning methods shows that the proposed method provides better results than recently proposed algorithms in schizophrenia detection. The proposed method can be used as a diagnostic tool in the detection of the schizophrenia, helping for early diagnosis and treatment.",
+      "openaccess_url": {
+        "url": "https://link.springer.com/content/pdf/10.1007/s40846-022-00758-9.pdf",
+        "status": "BRONZE",
+        "license": null,
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC9651124, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "openaccess_validated": false,
+      "peer_reviewed": true,
+      "why_selected": "recent, OA PDF, keyword match"
+    },
+    {
+      "title": "A systematic review of EEG based automated schizophrenia classification through machine learning and deep learning",
+      "year": 2024,
+      "authors": [
+        "J. Rahul",
+        "Diksha Sharma",
+        "L. Sharma",
+        "Umakanta Nanda",
+        "A. K. Sarkar"
+      ],
+      "venue": "Frontiers in Human Neuroscience",
+      "abstract": "The electroencephalogram (EEG) serves as an essential tool in exploring brain activity and holds particular importance in the field of mental health research. This review paper examines the application of artificial intelligence (AI), encompassing machine learning (ML) and deep learning (DL), for classifying schizophrenia (SCZ) through EEG. It includes a thorough literature review that addresses the difficulties, methodologies, and discoveries in this field. ML approaches utilize conventional models like Support Vector Machines and Decision Trees, which are interpretable and effective with smaller data sets. In contrast, DL techniques, which use neural networks such as convolutional neural networks (CNNs) and long short-term memory networks (LSTMs), are more adaptable to intricate EEG patterns but require significant data and computational power. Both ML and DL face challenges concerning data quality and ethical issues. This paper underscores the importance of integrating various techniques to enhance schizophrenia diagnosis and highlights AI\u2019s potential role in this process. It also acknowledges the necessity for collaborative and ethically informed approaches in the automated classification of SCZ using AI.",
+      "openaccess_url": {
+        "url": "https://www.frontiersin.org/articles/10.3389/fnhum.2024.1347082/pdf?isPublishedV2=False",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10899326, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "openaccess_validated": false,
+      "peer_reviewed": true,
+      "why_selected": "recent, OA PDF, keyword match"
+    },
+    {
+      "title": "ECG and EEG based detection and multilevel classification of stress using machine learning for specified genders: A preliminary study",
+      "year": 2023,
+      "authors": [
+        "A. Hemakom",
+        "Danita Atiwiwat",
+        "P. Israsena"
+      ],
+      "venue": "PLoS ONE",
+      "abstract": "Mental health, especially stress, plays a crucial role in the quality of life. During different phases (luteal and follicular phases) of the menstrual cycle, women may exhibit different responses to stress from men. This, therefore, may have an impact on the stress detection and classification accuracy of machine learning models if genders are not taken into account. However, this has never been investigated before. In addition, only a handful of stress detection devices are scientifically validated. To this end, this work proposes stress detection and multilevel stress classification models for unspecified and specified genders through ECG and EEG signals. Models for stress detection are achieved through developing and evaluating multiple individual classifiers. On the other hand, the stacking technique is employed to obtain models for multilevel stress classification. ECG and EEG features extracted from 40 subjects (21 females and 19 males) were used to train and validate the models. In the low&high combined stress conditions, RBF-SVM and kNN yielded the highest average classification accuracy for females (79.81%) and males (73.77%), respectively. Combining ECG and EEG, the average classification accuracy increased to at least 87.58% (male, high stress) and up to 92.70% (female, high stress). For multilevel stress classification from ECG and EEG, the accuracy for females was 62.60% and for males was 71.57%. This study shows that the difference in genders influences the classification performance for both the detection and multilevel classification of stress. The developed models can be used for both personal (through ECG) and clinical (through ECG and EEG) stress monitoring, with and without taking genders into account.",
+      "openaccess_url": {
+        "url": "https://journals.plos.org/plosone/article/file?id=10.1371/journal.pone.0291070&type=printable",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10473514, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "openaccess_validated": false,
+      "peer_reviewed": true,
+      "why_selected": "recent, OA PDF, keyword match"
+    },
+    {
+      "title": "Optimal Channels and Features Selection Based ADHD Detection From EEG Signal Using Statistical and Machine Learning Techniques",
+      "year": 2023,
+      "authors": [
+        "Md. Maniruzzaman",
+        "Md. Al Mehedi Hasan",
+        "Nobuyoshi Asai",
+        "Jungpil Shin"
+      ],
+      "venue": "IEEE Access",
+      "abstract": "Attention deficit hyperactivity disorder (ADHD) is one of the major psychiatric and neurodevelopment disorders worldwide. Electroencephalography (EEG) signal-based approach is very important for the early detection and classification of children with ADHD. However, diagnosing children with ADHD using full EEG channels with all features may lead to computational complexity and overfitting problems. To solve these problems, machine learning (ML)-based ADHD detection was designed by identifying optimal channels and its significant features. In this work, support vector machine and t-test based, two separate approaches were devised to select optimal channels individually and then proposed a hybrid channel selection approach by combining these two channel selection methods in order to select the optimal channels. After that, LASSO logistic regression-based model was used to select the important features from the selected channels. Finally, six ML-based classifiers, like Gaussian process classification (GPC), random forest, k-nearest neighbors, multilayer perceptron, decision tree, and logistic regression were applied for the detection of children with ADHD and evaluated their performances using accuracy and area under the curve (AUC). This study utilized a total of one hundred twenty-one children, with sixty-one children with ADHD, aged 7-12 years, and had nineteen channels. Ten different channels were selected by SVM based and an independent t-test-based approach separately and six overlapping channels were identified from both channel selection methods. Then, we selected twenty-eight features from selected six channels using LASSO. Using only six channels and twenty-eight features, GP-based classifier achieved an accuracy rate of 97.53% and AUC of 0.999. This is an improvement of 3% over previously developed techniques published in the literature. This study illustrated that LASSO with GP-based system performed outstanding performance in distinguishing children with ADHD from healthy children. This proposed system will be helpful to doctors and physicians in order to detect children with ADHD at an early stage and take the necessary steps for the patients to access appropriate healthcare services, receive effective treatment, and be more conscious of maintaining their lives.",
+      "openaccess_url": {
+        "url": "https://ieeexplore.ieee.org/ielx7/6287639/6514899/10091501.pdf",
+        "status": "GOLD",
+        "license": "CCBYNCND",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ACCESS.2023.3264266?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ACCESS.2023.3264266, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "openaccess_validated": false,
+      "peer_reviewed": true,
+      "why_selected": "recent, OA PDF, keyword match"
+    },
+    {
+      "title": "Detection of epileptic seizure in EEG signals using machine learning and deep learning techniques",
+      "year": 2024,
+      "authors": [
+        "Pankaj Kunekar",
+        "Mukesh Kumar Gupta",
+        "Pramod Gaur"
+      ],
+      "venue": "Journal of engineering and applied sciences",
+      "abstract": "Around 50 million individuals worldwide suffer from epilepsy, a chronic, non-communicable brain disorder. Several screening methods, including electroencephalography, have been proposed to identify epileptic episodes. EEG data, which are frequently utilised to enhance epilepsy analysis, offer essential information on the electrical processes of the brain. Prior to the emergence of deep learning (DL), feature extraction was accomplished by standard machine learning techniques. As a result, they were only as good as the people who made the features by hand. But with DL, both feature extraction and classification are fully automated. These methods have significantly advanced several fields of medicine, including the diagnosis of epilepsy. In this paper, the works focused on automated epileptic seizure detection using ML and DL techniques are presented as well as their comparative analysis is done. The UCI-Epileptic Seizure Recognition dataset is used for training and validation. Some of the conventional ML and DL algorithms are used with a proposed model which uses long short-term memory (LSTM) to find the best approach. Post that comparative analysis is performed on these algorithms to find the best approach for epileptic seizure detection. As a result, the proposed model LSTM gives a validation accuracy of 97% giving the most appropriate and precise result as compared to other mentioned algorithms used in this study.",
+      "openaccess_url": {
+        "url": "https://jeas.springeropen.com/counter/pdf/10.1186/s44147-023-00353-y",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1186/s44147-023-00353-y?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1186/s44147-023-00353-y, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "openaccess_validated": false,
+      "peer_reviewed": true,
+      "why_selected": "recent, OA PDF, keyword match"
+    },
+    {
+      "title": "Impact of Feature Selection Techniques on the Performance of Machine Learning Models for Depression Detection Using EEG Data",
+      "year": 2024,
+      "authors": [
+        "Marwa Hassan",
+        "N. Kaabouch"
+      ],
+      "venue": "Applied Sciences",
+      "abstract": "Major depressive disorder (MDD) poses a significant challenge in mental healthcare due to difficulties in accurate diagnosis and timely identification. This study explores the potential of machine learning models trained on EEG-based features for depression detection. Six models and six feature selection techniques were compared, highlighting the crucial role of feature selection in enhancing classifier performance. This study investigates the six feature selection methods: Elastic Net, Mutual Information (MI), Chi-Square, Forward Feature Selection with Stochastic Gradient Descent (FFS-SGD), Support Vector Machine-based Recursive Feature Elimination (SVM-RFE), and Minimal-Redundancy-Maximal-Relevance (mRMR). These methods were combined with six diverse classifiers: Logistic Regression, Support Vector Machine (SVM), Random Forest, Extreme Gradient Boosting (XGBoost), Categorical Boosting (CatBoost), and Light Gradient Boosting Machine (LightGBM). The results demonstrate the substantial impact of feature selection on model performance. SVM-RFE with SVM achieved the highest accuracy (93.54%) and F1 score (95.29%), followed by Logistic Regression with an accuracy of 92.86% and F1 score of 94.84%. Elastic Net also delivered strong results, with SVM and Logistic Regression both achieving 90.47% accuracy. Other feature selection methods yielded lower performance, emphasizing the importance of selecting appropriate feature selection and machine learning algorithms. These findings suggest that careful selection and application of feature selection techniques can significantly enhance the accuracy of EEG-based depression detection.",
+      "openaccess_url": {
+        "url": "https://www.mdpi.com/2076-3417/14/22/10532/pdf?version=1731660558",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.3390/app142210532?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.3390/app142210532, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "openaccess_validated": false,
+      "peer_reviewed": true,
+      "why_selected": "recent, OA PDF, keyword match"
+    },
+    {
+      "title": "Schizophrenia Detection Using Machine Learning Approach from Social Media Content",
+      "year": 2021,
+      "authors": [
+        "Yi Ji Bae",
+        "M. Shim",
+        "Won Hee Lee"
+      ],
+      "venue": "Italian National Conference on Sensors",
+      "abstract": "Schizophrenia is a severe mental disorder that ranks among the leading causes of disability worldwide. However, many cases of schizophrenia remain untreated due to failure to diagnose, self-denial, and social stigma. With the advent of social media, individuals suffering from schizophrenia share their mental health problems and seek support and treatment options. Machine learning approaches are increasingly used for detecting schizophrenia from social media posts. This study aims to determine whether machine learning could be effectively used to detect signs of schizophrenia in social media users by analyzing their social media texts. To this end, we collected posts from the social media platform Reddit focusing on schizophrenia, along with non-mental health related posts (fitness, jokes, meditation, parenting, relationships, and teaching) for the control group. We extracted linguistic features and content topics from the posts. Using supervised machine learning, we classified posts belonging to schizophrenia and interpreted important features to identify linguistic markers of schizophrenia. We applied unsupervised clustering to the features to uncover a coherent semantic representation of words in schizophrenia. We identified significant differences in linguistic features and topics including increased use of third person plural pronouns and negative emotion words and symptom-related topics. We distinguished schizophrenic from control posts with an accuracy of 96%. Finally, we found that coherent semantic groups of words were the key to detecting schizophrenia. Our findings suggest that machine learning approaches could help us understand the linguistic characteristics of schizophrenia and identify schizophrenia or otherwise at-risk individuals using social media texts.",
+      "openaccess_url": {
+        "url": "https://www.mdpi.com/1424-8220/21/17/5924/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC8434514, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "openaccess_validated": false,
+      "peer_reviewed": true,
+      "why_selected": "recent, OA PDF, keyword match"
+    },
+    {
+      "title": "Efficient Feature Selection and Machine Learning Based ADHD Detection Using EEG Signal",
+      "year": 2022,
+      "authors": [
+        "M. Maniruzzaman",
+        "Jungpil Shin",
+        "Md. Al Mehedi Hasan",
+        "A. Yasumura"
+      ],
+      "venue": "Computers, Materials &amp; Continua",
+      "abstract": null,
+      "openaccess_url": {
+        "url": "https://file.techscience.com/ueditor/files/cmc/TSP_CMC-72-3/TSP_CMC_28339/TSP_CMC_28339.pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.32604/cmc.2022.028339?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.32604/cmc.2022.028339, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "openaccess_validated": false,
+      "peer_reviewed": true,
+      "why_selected": "recent, OA PDF, keyword match"
+    },
+    {
+      "title": "Electroencephalography-Based Depression Detection Using Multiple Machine Learning Techniques",
+      "year": 2023,
+      "authors": [
+        "Amel Ksibi",
+        "Mohammed Zakariah",
+        "Leila Jamel Menzli",
+        "Oumaima Saidani",
+        "Latifah Almuqren",
+        "Rosy Awny Mohamed Hanafieh"
+      ],
+      "venue": "Diagnostics",
+      "abstract": "The growth of biomedical engineering has made depression diagnosis via electroencephalography (EEG) a trendy issue. The two significant challenges to this application are EEG signals\u2019 complexity and non-stationarity. Additionally, the effects caused by individual variances may hamper the generalization of detection systems. Given the association between EEG signals and particular demographics, such as gender and age, and the influences of these demographic characteristics on the incidence of depression, it would be preferable to include demographic factors during EEG modeling and depression detection. The main objective of this work is to develop an algorithm that can recognize depression patterns by studying EEG data. Following a multiband analysis of such signals, machine learning and deep learning techniques were used to detect depression patients automatically. EEG signal data are collected from the multi-modal open dataset MODMA and employed in studying mental diseases. The EEG dataset contains information from a traditional 128-electrode elastic cap and a cutting-edge wearable 3-electrode EEG collector for widespread applications. In this project, resting EEG readings of 128 channels are considered. According to CNN, training with 25 epoch iterations had a 97% accuracy rate. The patient\u2019s status has to be divided into two basic categories: major depressive disorder (MDD) and healthy control. Additional MDD include the following six classes: obsessive-compulsive disorders, addiction disorders, conditions brought on by trauma and stress, mood disorders, schizophrenia, and the anxiety disorders discussed in this paper are a few examples of mental illnesses. According to the study, a natural combination of EEG signals and demographic data is promising for the diagnosis of depression.",
+      "openaccess_url": {
+        "url": "https://www.mdpi.com/2075-4418/13/10/1779/pdf?version=1684382439",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10217709, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "openaccess_validated": false,
+      "peer_reviewed": true,
+      "why_selected": "recent, OA PDF, keyword match"
+    },
+    {
+      "title": "Exploring deep residual network based features for automatic schizophrenia detection from EEG",
+      "year": 2023,
+      "authors": [
+        "S. Siuly",
+        "Yanhui Guo",
+        "O. F. Al\u00e7in",
+        "Yan Li",
+        "P. Wen",
+        "Hua Wang"
+      ],
+      "venue": "Physical and Engineering Sciences in Medicine",
+      "abstract": "Schizophrenia is a severe mental illness which can cause lifelong disability. Most recent studies on the Electroencephalogram (EEG)-based diagnosis of schizophrenia rely on bespoke/hand-crafted feature extraction techniques. Traditional manual feature extraction methods are time-consuming, imprecise, and have a limited ability to balance accuracy and efficiency. Addressing this issue, this study introduces a deep residual network (deep ResNet) based feature extraction design that can automatically extract representative features from EEG signal data for identifying schizophrenia. This proposed method consists of three stages: signal pre-processing by average filtering method, extraction of hidden patterns of EEG signals by deep ResNet, and classification of schizophrenia by softmax layer. To assess the performance of the obtained deep features, ResNet softmax classifier and also several machine learning (ML) techniques are applied on the same feature set. The experimental results for a Kaggle schizophrenia EEG dataset show that the deep features with support vector machine classifier could achieve the highest performances (99.23% accuracy) compared to the ResNet classifier. Furthermore, the proposed model performs better than the existing approaches. The findings suggest that our proposed strategy has capability to discover important biomarkers for automatic diagnosis of schizophrenia from EEG, which will aid in the development of a computer assisted diagnostic system by specialists.",
+      "openaccess_url": {
+        "url": "https://link.springer.com/content/pdf/10.1007/s13246-023-01225-8.pdf",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10209282, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "openaccess_validated": false,
+      "peer_reviewed": true,
+      "why_selected": "recent, OA PDF, keyword match"
+    },
+    {
+      "title": "SchizoNET: a robust and accurate Margenau\u2013Hill time-frequency distribution based deep neural network model for schizophrenia detection using EEG signals",
+      "year": 2023,
+      "authors": [
+        "S. K. Khare",
+        "V. Bajaj",
+        "U. R. Acharya"
+      ],
+      "venue": "Physiological Measurement",
+      "abstract": "Objective. Schizophrenia (SZ) is a severe chronic illness characterized by delusions, cognitive dysfunctions, and hallucinations that impact feelings, behaviour, and thinking. Timely detection and treatment of SZ are necessary to avoid long-term consequences. Electroencephalogram (EEG) signals are one form of a biomarker that can reveal hidden changes in the brain during SZ. However, the EEG signals are non-stationary in nature with low amplitude. Therefore, extracting the hidden information from the EEG signals is challenging. Approach. The time-frequency domain is crucial for the automatic detection of SZ. Therefore, this paper presents the SchizoNET model combining the Margenau\u2013Hill time-frequency distribution (MH-TFD) and convolutional neural network (CNN). The instantaneous information of EEG signals is captured in the time-frequency domain using MH-TFD. The time-frequency amplitude is converted to two-dimensional plots and fed to the developed CNN model. Results. The SchizoNET model is developed using three different validation techniques, including holdout, five-fold cross-validation, and ten-fold cross-validation techniques using three separate public SZ datasets (Dataset 1, 2, and 3). The proposed model achieved an accuracy of 97.4%, 99.74%, and 96.35% on Dataset 1 (adolescents: 45 SZ and 39 HC subjects), Dataset 2 (adults: 14 SZ and 14 HC subjects), and Dataset 3 (adults: 49 SZ and 32 HC subjects), respectively. We have also evaluated six performance parameters and the area under the curve to evaluate the performance of our developed model. Significance. The SchizoNET is robust, effective, and accurate, as it performed better than the state-of-the-art techniques. To the best of our knowledge, this is the first work to explore three publicly available EEG datasets for the automated detection of SZ. Our SchizoNET model can help neurologists detect the SZ in various scenarios.",
+      "openaccess_url": {
+        "url": "https://iopscience.iop.org/article/10.1088/1361-6579/acbc06/pdf",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1088/1361-6579/acbc06?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1088/1361-6579/acbc06, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "openaccess_validated": false,
+      "peer_reviewed": true,
+      "why_selected": "recent, OA PDF, keyword match"
+    },
+    {
+      "title": "An Explainable EEG-Based Human Activity Recognition Model Using Machine-Learning Approach and LIME",
+      "year": 2023,
+      "authors": [
+        "I. Hussain",
+        "Rafsan Jany",
+        "Richard Boyer",
+        "A. Azad",
+        "S. Alyami",
+        "Se Jin Park",
+        "Md Mehedi Hasan",
+        "Md. Azam Hossain"
+      ],
+      "venue": "Italian National Conference on Sensors",
+      "abstract": "Electroencephalography (EEG) is a non-invasive method employed to discern human behaviors by monitoring the neurological responses during cognitive and motor tasks. Machine learning (ML) represents a promising tool for the recognition of human activities (HAR), and eXplainable artificial intelligence (XAI) can elucidate the role of EEG features in ML-based HAR models. The primary objective of this investigation is to investigate the feasibility of an EEG-based ML model for categorizing everyday activities, such as resting, motor, and cognitive tasks, and interpreting models clinically through XAI techniques to explicate the EEG features that contribute the most to different HAR states. The study involved an examination of 75 healthy individuals with no prior diagnosis of neurological disorders. EEG recordings were obtained during the resting state, as well as two motor control states (walking and working tasks), and a cognition state (reading task). Electrodes were placed in specific regions of the brain, including the frontal, central, temporal, and occipital lobes (Fz, C1, C2, T7, T8, Oz). Several ML models were trained using EEG data for activity recognition and LIME (Local Interpretable Model-Agnostic Explanations) was employed for interpreting clinically the most influential EEG spectral features in HAR models. The classification results of the HAR models, particularly the Random Forest and Gradient Boosting models, demonstrated outstanding performances in distinguishing the analyzed human activities. The ML models exhibited alignment with EEG spectral bands in the recognition of human activity, a finding supported by the XAI explanations. To sum up, incorporating eXplainable Artificial Intelligence (XAI) into Human Activity Recognition (HAR) studies may improve activity monitoring for patient recovery, motor imagery, the healthcare metaverse, and clinical virtual reality settings.",
+      "openaccess_url": {
+        "url": "https://www.mdpi.com/1424-8220/23/17/7452/pdf?version=1693198762",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC10490625, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "openaccess_validated": false,
+      "peer_reviewed": true,
+      "why_selected": "recent, OA PDF, keyword match"
+    },
+    {
+      "title": "From Sound Perception to Automatic Detection of Schizophrenia: An EEG-Based Deep Learning Approach",
+      "year": 2022,
+      "authors": [
+        "Carla Barros",
+        "B. Roach",
+        "J. Ford",
+        "A. Pinheiro",
+        "Carlos A. Silva"
+      ],
+      "venue": "Frontiers in Psychiatry",
+      "abstract": "Deep learning techniques have been applied to electroencephalogram (EEG) signals, with promising applications in the field of psychiatry. Schizophrenia is one of the most disabling neuropsychiatric disorders, often characterized by the presence of auditory hallucinations. Auditory processing impairments have been studied using EEG-derived event-related potentials and have been associated with clinical symptoms and cognitive dysfunction in schizophrenia. Due to consistent changes in the amplitude of ERP components, such as the auditory N100, some have been proposed as biomarkers of schizophrenia. In this paper, we examine altered patterns in electrical brain activity during auditory processing and their potential to discriminate schizophrenia and healthy subjects. Using deep convolutional neural networks, we propose an architecture to perform the classification based on multi-channels auditory-related EEG single-trials, recorded during a passive listening task. We analyzed the effect of the number of electrodes used, as well as the laterality and distribution of the electrical activity over the scalp. Results show that the proposed model is able to classify schizophrenia and healthy subjects with an average accuracy of 78% using only 5 midline channels (Fz, FCz, Cz, CPz, and Pz). The present study shows the potential of deep learning methods in the study of impaired auditory processing in schizophrenia with implications for diagnosis. The proposed design can provide a base model for future developments in schizophrenia research.",
+      "openaccess_url": {
+        "url": "https://www.frontiersin.org/articles/10.3389/fpsyt.2021.813460/pdf",
+        "status": "GOLD",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://pmc.ncbi.nlm.nih.gov/articles/PMC8892210, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "openaccess_validated": false,
+      "peer_reviewed": true,
+      "why_selected": "recent, OA PDF, keyword match"
+    },
+    {
+      "title": "Role of machine learning and deep learning techniques in EEG-based BCI emotion recognition system: a review",
+      "year": 2024,
+      "authors": [
+        "Priyadarsini Samal",
+        "Mohammad Farukh Hashmi"
+      ],
+      "venue": "Artificial Intelligence Review",
+      "abstract": "Emotion is a subjective psychophysiological reaction coming from external stimuli which impacts every aspect of our daily lives. Due to the continuing development of non-invasive and portable sensor technologies, such as brain-computer interfaces (BCI), intellectuals from several fields have been interested in emotion recognition techniques. Human emotions can be recognised using a variety of behavioural cues, including gestures and body language, voice, and physiological markers. The first three, however, might be ineffective because people sometimes conceal their genuine emotions either intentionally or unknowingly. More precise and objective emotion recognition can be accomplished using physiological signals. Among other physiological signals, Electroencephalogram (EEG) is more responsive and sensitive to variation in affective states. Various EEG-based emotion recognition methods have recently been introduced. This study reviews EEG-based BCIs for emotion identification and gives an outline of the progress made in this field. A summary of the datasets and techniques utilised to evoke human emotions and various emotion models\u00a0is also given. We discuss several EEG feature extractions, feature selection/reduction, machine learning, and deep learning algorithms in accordance with standard emotional identification process. We provide an overview of the human brain's EEG rhythms, which are closely related to emotional states. We also go over a number of EEG-based emotion identification research and compare numerous machine learning and deep learning techniques. In conclusion, this study highlights the\u00a0applications,\u00a0challenges and potential areas for future research in identification and classification of human emotional states.",
+      "openaccess_url": {
+        "url": "https://link.springer.com/content/pdf/10.1007/s10462-023-10690-2.pdf",
+        "status": "HYBRID",
+        "license": "CCBY",
+        "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1007/s10462-023-10690-2?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/s10462-023-10690-2, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+      },
+      "openaccess_validated": false,
+      "peer_reviewed": true,
+      "why_selected": "recent, OA PDF, keyword match"
+    }
+  ]
+}
